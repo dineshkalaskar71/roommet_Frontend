@@ -1,0 +1,141 @@
+/* Container */
+.notify-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 3rem 2rem;
+  gap: 2rem;
+  box-sizing: border-box;
+  /* background-color: #e7803c; */
+}
+
+/* Left side (image) */
+.notify-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notify-image {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Right side (form) */
+.notify-right {
+  flex: 1;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.notify-header {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #1a1a1a;
+}
+
+.notify-subtext {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+/* .notify-right{
+background-color: #d38865;
+}   */
+
+.notify-btn{
+  background: linear-gradient(to bottom right, #FF5E62, #FF9966);
+}
+.notify-form input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.notify-form input:focus {
+ /* background: linear-gradient(to bottom right, #FF5E62, #FF9966); */
+  outline: none;
+}
+
+.notify-form button {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(to bottom right, #FF5E62, #FF9966);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.notify-form button:hover {
+ background: linear-gradient(to bottom right, #FF5E62, #FF9966);
+}
+
+.notify-message {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #0a0;
+}
+
+/* ✅ Responsive Design */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .notify-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .notify-right {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .notify-image {
+    max-width: 400px;
+  }
+
+  .notify-header {
+    font-size: 1.75rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .notify-section {
+    padding: 2rem 1rem;
+  }
+
+  .notify-right {
+    padding: 1.5rem;
+  }
+
+  .notify-header {
+    font-size: 1.5rem;
+  }
+
+  .notify-subtext {
+    font-size: 0.95rem;
+  }
+
+  .notify-form input,
+  .notify-form button {
+    font-size: 0.95rem;
+  }
+}
