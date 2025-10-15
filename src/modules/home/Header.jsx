@@ -11,10 +11,10 @@ export default function Header({ onLoginClick, onPostAdClick }) {
       <div className="bg-gradient-to-r from-[#FF5E62] to-[#FF9966] text-white py-2 hidden md:block">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between text-sm">
-            <p>🏠 Find Your Perfect Flatmate & Room in India</p>
+            <p>Find Your Perfect Flatmate & Room in India</p>
             <div className="flex items-center gap-4">
-              <button className="hover:underline">Help</button>
-              <button className="hover:underline">Download App</button>
+              {/* <button className="hover:underline">Help</button>
+              <button className="hover:underline">Download App</button> */}
             </div>
           </div>
         </div>
